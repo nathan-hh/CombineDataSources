@@ -60,6 +60,10 @@ extension UICollectionView {
             return itemsSubscriber(.init(cellIdentifier: cellIdentifier, cellType: cellType, cellConfig: cellConfig))
     }
     
+    public func modelSelected(){
+        
+    }
+    
     /// A table view specific `Subscriber` that receives `[Element]` input and updates a single section table view.
     /// - Parameter source: A configured `CollectionViewItemsController<Items>` instance.
     public func itemsSubscriber<Items>(_ source: CollectionViewItemsController<[Items]>)
